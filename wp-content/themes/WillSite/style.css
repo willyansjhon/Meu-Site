@@ -1,0 +1,165 @@
+/*
+Theme Name: Meu-Site
+Theme Uri: *
+Author: Willyans Jhonson
+Description: My personal theme
+Tested ip to: 6.0
+Version: 0.0.1
+Licence: GNU General Public Licence v2 or later
+Test Domain: Will-theme
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Bitter', serif;
+}
+
+.container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    align-items: center;
+}
+
+@media (max-width: 576px){
+    .container {
+        padding: var();
+    }
+
+}
+    
+
+.top-bar { 
+    width: auto;
+    height: 70px;
+    background: rgb(160, 218, 155);
+}
+
+.top-bar .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-area {
+    background: burlywood;
+    width: auto;
+    height: 50px;
+}
+
+.main-menu {
+    display: flex;
+    justify-content: center;
+}
+.main-menu ul {  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.main-menu a{
+    margin-left: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+}
+
+.menu-icon,
+.check-button {
+    cursor: pointer;
+    display: none;
+}
+.menu-icon .bar1,
+.menu-icon .bar2, 
+.menu-icon .bar3 {
+    width: 28px;
+    height: 3px;
+    background-color: black;
+    margin: 5px 0;
+    transition: 0.4s;
+}
+@media (max-width: 767px){
+     .menu-icon,
+     .check-button {
+        display: block;
+    }
+     .check-button{
+        border: none;
+        background: transparent;
+        height: 55px;
+    }
+    .main-menu ul {
+        position: absolute;
+        width: 100%;
+        background: #000000;
+        left: -999px;
+        text-align: left;
+        transition: all cubic-bezier(.79,.14,.15,.86) .5s;
+        padding: 0;
+        margin: 0;
+        z-index: 1;
+    }
+    .main-menu ul:not(.sub-menu){
+        margin-top: 55px;
+    }
+    .main-menu ul li{
+        display: block;
+        margin: 15px 0;
+        line-height: 30px;
+    }
+    .main-menu ul li a {
+        color: #ffffff;
+    }
+    .main-menu ul.sub-menu{
+        position: relative;
+        top: 0;
+        margin-left: 30px;
+        display: block;
+        width: auto;
+    }
+    .main-menu ul.sub-menu a {
+        color: var(--wpdevs-gray1);
+    }
+    .show-dropdown {
+        left: 0 !important;
+    }
+    .animate-button .bar1 {
+         -webkit-transform: rotate(-45deg) translate(-4px, 4px);
+         transform: rotate(-45deg) translate(-4px, 4px);
+    }
+    .animate-button .bar2 { opacity: 0;}
+    .animate-button .bar3 {
+        -webkit-transform: rotate(45deg) translate(-7px, -7px);
+        transform: rotate(45deg) translate(-7px, -7px);
+   }
+
+}
+
+
+
+
+
+.site-footer {
+    background:rgb(160, 218, 155);
+    width: 100%;
+    height: 50px;
+}
+
+.site-footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-menu ul {
+    display: flex;
+    list-style: none;
+}
+
+.footer-menu a {
+    margin-left: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+}
