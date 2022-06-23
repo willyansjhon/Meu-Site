@@ -4,7 +4,7 @@
         <div id="content" class="site-content">
             <div id="primary" class="content-area">
                 <main id="main" class="site-main">
-                    <section class="home-blog">
+                    <section class="index-blog">
                         <div class="container">
                             <div class="blog-items">
                             <?php
@@ -15,7 +15,7 @@
                                        <h2><?php the_title();?></h2>
                                         <?php the_post_thumbnail('medium'); ?>
                                        <div class="meta-info">
-                                        <p>Posted in<?php echo get_the_date();?> by <?php the_author_posts_link();?></p>
+                                        <p>Posted <strong>in</strong> <?php echo get_the_date();?> <strong>by</strong> <?php the_author_posts_link();?></p>
                                         <p>Categories: <?php the_category(' ')?></p>
                                         <p>Tags: <?php the_tags(' ', ',');?></p>
                                        </div>
