@@ -348,8 +348,12 @@ img {
     text-align: center;
 }
 .home-items p {
+    width: 500px;
    padding: 20px;
-   text-align: center;
+   text-align: center; 
+   overflow: hidden; 
+   text-overflow: ellipsis; 
+   white-space: nowrap;
 }
 
 /*nosso slidebar*/
@@ -469,4 +473,79 @@ img {
         display: none;
     }
     
+}
+
+/*About*/
+
+.about-content {
+    display: flex;
+}
+.btn-about-1{
+    margin-left: 47%;
+    width: 50px;
+    height: 10px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    border: none;
+    background: #9cbdad; 
+}
+.btn-about-2{
+    margin-left: 47%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+    border: none;
+    background: #9cbdad; 
+}
+.page-content h1{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.about-content-1 {
+    width: 100%;
+    height: auto;
+    background: cadetblue;
+}
+.about-content-1 h2 {
+    text-align: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.my-info {
+    background: #fcfcfc;
+    width: 80%;
+    height: 700px;
+    margin: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+
+}
+
+.my-info img {
+   width: 400px;
+   height: 400px;
+   object-fit: cover;
+   border-radius: 70%;
+   padding: 20px;
+}
+.my-info h3 {
+    text-align: center;
+    font-size: 30px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ }
+
+.about-content-2 {
+    width: 100%;
+    height: 700px;
+    background: #1e847f;
+}
+.about-content-2 h2 {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+    padding: 10px;
 }
