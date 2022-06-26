@@ -68,7 +68,8 @@ img {
     background: burlywood;
     width: auto;
     height: 50px;
-    
+    border-bottom: 2px rgb(88, 105, 84) solid;
+    border-top: 2px rgb(88, 105, 84) solid;
 }
 
 .main-menu {
@@ -300,6 +301,13 @@ img {
     height: 300px;
     object-fit: cover;
 }
+.services-item a {
+    text-decoration: none;
+    color: #4b7969;
+}
+.services-item ul {
+    list-style: none;
+}
 
 .services-item h4 {
     font-size: 20px;
@@ -312,7 +320,13 @@ img {
     
 }
 
-/*home-posts*/ 
+/*home-posts*/
+.latests-posts {
+    padding: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+}
+
 .home-items img{
     width: 500px;
     height: 200px;
@@ -344,8 +358,11 @@ img {
     
 }
 .home-items h2 {
-    padding: 20px;
+    padding: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
     text-align: center;
+
 }
 .home-items p {
     width: 500px;
@@ -360,6 +377,10 @@ img {
   .home-slider{ 
     margin-top:20px;
     margin-bottom:20px;
+}
+.home-slider a{ 
+    text-decoration: none;
+    color: #030303;
 }
 
   .slider{
@@ -475,10 +496,62 @@ img {
     
 }
 
+/*home-ending*/
+.home-ending {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: #030303;
+}
+.home-ending .container {
+    display: flex;
+}
+.home-ending-content-1 {
+    width: 100%;
+    height: 700PX;
+}
+.home-ending-content-1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    border-radius: 10px;
+}
+.home-ending-content-2 {
+    width: 100%;
+    height: 700px;
+    text-align: center;
+}
+.home-ending-content-2 p {
+    color: #ffffff;
+    width: 100%;
+    height: auto;
+    text-align: right;
+}
+.home-ending-content-2 h1,
+.home-ending-content-2 h2,
+.home-ending-content-2 h3 {
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.home-ending a {
+    text-decoration: none;
+    color: #fcfcfc;
+}
+
 /*About*/
 
 .about-content {
     display: flex;
+}
+@media (max-width: 762px){
+    .about-content {
+        flex-direction: column;
+    }
+    .my-info img {
+       margin: 10%;
+    }
+    
 }
 .btn-about-1{
     margin-left: 47%;
@@ -518,7 +591,7 @@ img {
 .my-info {
     background: #fcfcfc;
     width: 80%;
-    height: 700px;
+    height: auto;
     margin: auto;
     border-radius: 10px;
     margin-bottom: 20px;
@@ -532,20 +605,92 @@ img {
    border-radius: 70%;
    padding: 20px;
 }
+@media (max-width: 1250px){
+    .my-info img {
+        width: 300px;
+        height: 300px;
+    }
+    
+}
+@media (max-width: 990px){
+    .my-info img {
+        width: 250px;
+        height: 250px;
+    }
+    
+}
 .my-info h3 {
     text-align: center;
     font-size: 30px;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
  }
+ .text-about-me {
+    height: auto;
+    margin: 10px 10px 10px 10px;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color:darkgoldenrod;
+ }
+
+ .me-linguagens {
+    height: auto;
+    display: grid;
+    grid-template-columns: 1.0fr 1.0fr 1.0fr;
+ }
+ .me-linguagens img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+ }
+ @media (max-width: 1200px){
+    .me-linguagens img {
+        width: 60px;
+        height: 60px;
+    }
+    
+}
+
+ .contact {
+      height: auto;
+      display: flex;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      margin-left: 20px;
+      margin-right: 20px;
+      border:black solid;
+      border-radius: 10px;
+      background-color: #fcfcfc;
+ }
+ .contact img {
+    margin-left: 40px;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    padding: 10px;
+
+ }
 
 .about-content-2 {
     width: 100%;
-    height: 700px;
+    height: auto;
     background: #1e847f;
 }
 .about-content-2 h2 {
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #fcfcfc;
     font-size: 50px;
     padding: 10px;
 }
+.about-us-content {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin: 30px;
+    padding: 20px;
+    text-align: center;
+    background: #2b2b2b;
+    color: #ffffff;
+}
+
+
