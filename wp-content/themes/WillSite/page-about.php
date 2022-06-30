@@ -4,7 +4,6 @@
         <div id="content" class="site-content">
             <div id="primary" class="content-area">
                 <main id="main" class="site-main">
-                    <h2><?php the_title();?></h2>
                     <section class="page-content">
                         <div class="container">
                             <h1>About Will Team</h1>

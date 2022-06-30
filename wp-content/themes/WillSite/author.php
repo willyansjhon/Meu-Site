@@ -7,13 +7,25 @@
                     <section class="index-blog">
                         <div class="container">
                             <div class="blog-items">
-                                <h1 class="blog-title">Blog</h1>
+                                <h1 class="blog-title">Posts do: <?php the_author_posts_link(); ?> </h1>
                             <?php
                             if(have_posts()):
                                 while(have_posts()) : the_post();
-                                    
-                                get_template_part('parts/content','blog');
-                                   endwhile; ?>
+                                ?>
+                                <?php if('post' == get_post_type()):?>
+                                   <article>
+                                        <a class="title-blog-post" href="<?php the_permalink(); ?>"><?php the_title();?></a>
+                                        <div class="meta-info">
+                                        <p>Posted <strong>in</strong> <?php echo get_the_date();?> <strong>by</strong> <?php the_author_posts_link();?></p>
+                                        <p>Categories: <?php the_category(' ')?></p>
+                                        <p>Tags: <?php the_tags(' ', ',');?></p>
+                                       </div>
+                                       <?php the_excerpt();?>
+                                       <hr>
+                                   </article>
+                                <?php endif;?>
+                                <?php
+                                endwhile;?>
                                 <div class="meusite-pagination">
                                     <div class="pages new"><?php previous_posts_link('<< Newer posts');?></div>
                                     <div class="pages old"><?php next_posts_link('Older posts >>');?></div>
@@ -23,7 +35,6 @@
                                 <p>Nothing yet to show!</p>
                             <?php endif; ?>
                             </div>
-                            <?php get_sidebar(); ?>
                         </div>
                     </section>
                 </main>

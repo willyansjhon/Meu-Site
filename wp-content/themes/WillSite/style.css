@@ -210,6 +210,12 @@ img {
    background: #9cbdad;
    
 }
+.blog-title {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-size: 50px;
+}
 .blog-items h2 {
     margin-bottom: 10px;
 }
@@ -218,12 +224,20 @@ img {
     height: 3px;
     border-radius: 10px;
 }
-.blog-items p {
-    padding: 10px;
-}
 .blog-items a {
+    padding: 10px;
+    text-decoration: none;
+    color: #fcfcfc;
+}
+.title-blog-post {
+    display: block;
+    margin-bottom: 20px;
     text-decoration: none;
     color: rgb(37, 88, 71);
+    font-size: 30px;
+}
+.title-blog-post:hover {
+    color: aliceblue;
 }
 .blog-items img {
     width: 250px;
@@ -267,6 +281,9 @@ img {
     background: rgb(212, 233, 192);
     width: 100%;
     height: auto;
+}
+.services a:hover {
+    color: #fff;
 }
 
 .services-title {
@@ -326,13 +343,25 @@ img {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 50px;
 }
+.home-items a{
+    text-decoration: none;
+    text-align: none;
+    padding: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    text-align: center;
+    color: #000000;
+}
+.home-items a:hover{
+    color:#fff;
+}
 
 .home-items img{
     width: 500px;
     height: 200px;
     object-fit: cover;
     padding: 20px;
-
+    border-radius: 50px;
 }
 .home-items img:hover {
     transform: scale(1.20);
@@ -517,7 +546,7 @@ img {
 }
 .home-ending-content-2 {
     width: 100%;
-    height: 700px;
+    height: auto;
     text-align: center;
 }
 .home-ending-content-2 p {
@@ -543,6 +572,8 @@ img {
 
 .about-content {
     display: flex;
+    margin-bottom: 20px;
+    border:rgb(108, 192, 164) 3px solid;
 }
 @media (max-width: 762px){
     .about-content {
@@ -693,4 +724,132 @@ img {
     color: #ffffff;
 }
 
+/* Page-Single*/
+.single-itens {
+    background: #d4d3d3;
+    width: 100%;
+    height: auto;
+}
+.title-blog-post-single  {
+    font-size: 50px;
+    display: block;
+    text-decoration: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.single-itens a {
+    text-align: center;
+    color: rgb(72, 185, 132);
+}
+.single-itens p {
+    text-align: center;
+    margin-top:20px ;
+    margin-bottom: 20px;
+    font-style: italic;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.single-itens img {
+    border-radius: 50px;
+}
 
+/* comments*/
+.comments-area  {
+    background-color: #2e2e2e;
+    color: #fcfcfc;
+    width: auto;
+    height: auto;
+ }
+ .comment-reply-title {
+    padding: 10px;
+ }
+ .comments-area h2 {
+    padding: 20px;
+   text-align: left;
+ }
+.comments-area img {
+   width: 60px;
+   height: 60px;
+}
+.comments-area ol {
+    list-style: none;
+    padding: 40px;
+    width: auto;
+    height: auto;
+ }
+ .comment-body {
+    margin-bottom: 20px;
+ }
+ .comment-body p {
+    word-wrap: break-word;
+ }
+ .textarea {
+    width: 400px;
+    height: 400px;
+    padding: 10px;
+ }
+ .comments-area .submit {
+    font-size: 30px;
+    color: #1e847f;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+ }
+
+ /*search bar*/
+
+ #s {
+    width: auto;
+    height: 40px;
+    border-radius: 10px;
+    border: solid transparent;
+    color: #000000;
+    background: #9cbdad;
+    padding: 1px;
+    font-size: 20px;
+ }
+
+ #searchsubmit {
+    height: 40px;
+    width: 70px;
+ }
+
+ /*paginação site*/
+ .meusite-pagination {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 20px;
+ }
+
+ .meusite-pagination-post {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 20px;
+ }
+ .meusite-pagination-post a {
+    text-decoration: none;
+    font-size: 30px;
+    color: rgb(75, 141, 119);
+ }
+
+ /* page-404*/
+
+ .page-404 h1 {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+ }
+ .page-404 p {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+ }
+ .searchform {
+    display: flex;
+    justify-content: center;
+ }
