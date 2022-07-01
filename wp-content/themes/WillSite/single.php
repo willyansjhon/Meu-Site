@@ -12,7 +12,7 @@
                                     <div class="meta-info">
                                     </div>
                                     <?php the_content();?>
-                                    <p>Posted <strong>in</strong> <?php echo get_the_date();?> <strong>by</strong> <?php the_author_posts_link();?></p>
+                                    <p>Posted <strong>in</strong> <?php echo esc_html(get_the_date());?> <strong>by</strong> <?php the_author_posts_link();?></p>
                                     <p>Categories: <?php the_category(' ')?></p>
                                     <p>Tags: <?php the_tags(' ', ',');?></p>
                                     <hr>

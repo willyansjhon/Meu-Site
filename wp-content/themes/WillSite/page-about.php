@@ -6,12 +6,12 @@
                 <main id="main" class="site-main">
                     <section class="page-content">
                         <div class="container">
-                            <h1>About Will Team</h1>
+                            <h1><?php esc_html_e('About Will Team');?></h1>
                             <button class="btn-about-1"></button>
                             <button class="btn-about-2"></button>
                             <div class="about-content">
                                 <div class="about-content-1">
-                                    <h2>ME</h2>
+                                    <h2><?php esc_html_e('ME');?></h2>
                                     <div class="my-info">
                                     <?php 
                                         $image = get_field('img_me');
@@ -19,11 +19,11 @@
                                         if( $image ) {
                                             echo wp_get_attachment_image( $image, $size );
                                     } ?>
-                                    <h3>Willyans Jhonson</h3>
+                                    <h3><?php esc_html_e('Willyans Jhonson');?></h3>
                                     <div class="text-about-me">
                                         <?php the_field('me_description'); ?>
                                     </div>
-                                    <h3>Nossas linguagens</h3>
+                                    <h3><?php esc_html_e('Nossas linguagens');?></h3>
                                     <div class="me-linguagens">
                                         <?php 
                                             $image = get_field('linguagens_img_1');
@@ -62,7 +62,7 @@
                                             echo wp_get_attachment_image( $image, $size );
                                         } ?>                                  
                                     </div>
-                                    <h3>Contact</h2>
+                                    <h3><?php esc_html_e('Contact');?></h3>
                                     <div class="contact">
                                         <ul>
                                             <a href="<?php the_field('url_contact_1'); ?>"> <?php 
@@ -88,7 +88,7 @@
                                     </div>
                                 </div>
                                 <div  class="about-content-2">
-                                    <h2>About Us</h2>
+                                    <h2><?php esc_html_e('About Us');?></h2>
                                     <div class="about-us-content">
                                         <?php the_field('about_us'); ?>
                                     </div>

@@ -32,7 +32,7 @@
                                 </div>
                                 <?php
                             else: ?>
-                                <p>Nothing yet to show!</p>
+                                <p><?php esc_html_e('Nothing yet to show!');?></p>
                             <?php endif; ?>
                             </div>
                         </div>

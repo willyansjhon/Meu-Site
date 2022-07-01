@@ -16,7 +16,7 @@
                                    <article>
                                         <a class="title-blog-post" href="<?php the_permalink(); ?>"><?php the_title();?></a>
                                         <div class="meta-info">
-                                        <p>Posted <strong>in</strong> <?php echo get_the_date();?> <strong>by</strong> <?php the_author_posts_link();?></p>
+                                        <p>Posted <strong>in</strong> <?php echo_esc_html(get_the_date());?> <strong>by</strong> <?php the_author_posts_link();?></p>
                                         <p>Categories: <?php the_category(' ')?></p>
                                         <p>Tags: <?php the_tags(' ', ',');?></p>
                                        </div>
@@ -32,7 +32,7 @@
                                 </div>
                                 <?php
                             else: ?>
-                                <p>Nothing yet to show!</p>
+                                <p><?php esc_html_e('Nothing yet to show!');?></p>
                             <?php endif; ?>
                             </div>
                         </div>

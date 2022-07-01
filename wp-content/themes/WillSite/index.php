@@ -7,7 +7,7 @@
                     <section class="index-blog">
                         <div class="container">
                             <div class="blog-items">
-                                <h1 class="blog-title">Blog</h1>
+                                <h1 class="blog-title"><?php esc_html_e('Blog');?></h1>
                             <?php
                             if(have_posts()):
                                 while(have_posts()) : the_post();
@@ -20,7 +20,7 @@
                                 </div>
                                 <?php
                             else: ?>
-                                <p>Nothing yet to show!</p>
+                                <p><?php esc_html_e('Nothing yet to show!');?></p>
                             <?php endif; ?>
                             </div>
                             <?php get_sidebar(); ?>
